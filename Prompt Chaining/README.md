@@ -2,6 +2,8 @@
 LLM 的輸出為下一個 LLM 的輸入。這種順序設計允許結構化推理和逐步完成任務。
 使用 OpenAI 的大型語言模型 (LLM) 進行提示鏈 (Prompt Chaining)。
 
+![prompt-chaining](prompt-chaining.webp)
+
 `serial_chain_workflow` 函數接收一個初始問題 (`input_query`) 和一個提示列表 (`prompt_chain`)。 
 它會依序將問題傳遞給 LLM，並使用 `prompt_chain` 中的每個提示來逐步處理問題。
 
